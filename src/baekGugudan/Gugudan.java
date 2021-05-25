@@ -18,7 +18,9 @@ public class Gugudan {
 	}
 
 	public static void main(String[] args) {
-		int[] baek = calculate(5);
-		print(baek);
+		for (int i = 2; i < 10; i++) {
+			int[] baek = calculate(i);
+			print(baek);
+		}
 	}
 }
