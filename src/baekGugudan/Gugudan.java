@@ -1,5 +1,7 @@
 package baekGugudan;
 
+import java.util.Scanner;
+
 public class Gugudan {
 
 	public static int[] calculate(int times) {
@@ -18,9 +20,13 @@ public class Gugudan {
 	}
 
 	public static void main(String[] args) {
-		for (int i = 2; i < 10; i++) {
-			int[] baek = calculate(i);
-			print(baek);
+		System.out.println("몇 단?");
+		Scanner scanner = new Scanner(System.in);
+		int number = scanner.nextInt();
+
+		for (int j = 1; j < 10; j++) {
+			System.out.println(number + "X" + j + "=" + number * j);
 		}
+		scanner.close();
 	}
 }
