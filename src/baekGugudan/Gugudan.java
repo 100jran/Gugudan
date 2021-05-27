@@ -24,8 +24,10 @@ public class Gugudan {
 		Scanner scanner = new Scanner(System.in);
 		int number = scanner.nextInt();
 
-		for (int j = 1; j < 10; j++) {
-			System.out.println(number + "X" + j + "=" + number * j);
+		for (int i = 2; i <= number; i++) {
+			for (int j = 1; j <= number; j++) {
+				System.out.println(i + "X" + j + "=" + i * j);
+			}
 		}
 		scanner.close();
 	}
